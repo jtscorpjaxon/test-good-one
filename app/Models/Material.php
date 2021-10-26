@@ -11,4 +11,7 @@ class Material extends Model
     protected $fillable = [
         'name',
     ];
+    public function warehouses(){
+        return $this->hasMany(Warehouse::class);
+    }
 }
