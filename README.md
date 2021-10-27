@@ -16,6 +16,8 @@ php artisan migrate
 Keyin,
 <br>
 php artisan db:seed 
+<br>
+<br>
 php artisan serve
 
 <br>
