@@ -8,7 +8,7 @@ olinyapti) ma’lumot olish uchun omborxonaga so’rov yuborish. Mahsulot ishlab
 chiqarish uchun ishlatilinadigan xomashyolar oldindan kiritilgan bo’ladi.
 
 <img src="/storage/GoodOne.jpg" alt="Database">
-Birinchi ishga tus hurish uchun migratsiyani ishga tushiring:
+Birinchi ishga tushurish uchun migratsiyani ishga tushiring:
 <br>
 php artisan migrate
 <br>
