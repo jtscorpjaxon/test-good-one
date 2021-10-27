@@ -11,6 +11,8 @@ class ProductService
     public function calculator()
     {
         $request = request();
+        if (empty($request->data))
+            return [];
         $ids = array_column($request->data, 'product_id');
         $products = Product::query()->whereIn('id', $ids)->get()->load('materials')->map(
             function ($product) use ($request) {
