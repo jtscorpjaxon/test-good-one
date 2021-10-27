@@ -22,7 +22,8 @@ class ProductResource extends JsonResource
         return [
             "product_name" => $this->name,
             "product_qty" => $this->qty,
-            "product_materials" => $this->wareHouse,
+            "product_materials" =>$this->warehouse
+                //ProductMaterialResource::collection($this->materials),
         ];
     }
 }

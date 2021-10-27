@@ -20,12 +20,15 @@ class ProductMaterialResource extends JsonResource
         /**
          * @var Material $this
          */
-        dd($this->pivot);
-        return [
-          //  "warehouse_id" => $this->warehouse->id,
+        $result=[];
+        dd($this);
+foreach ($this->warehouses as $warehouse)
+        $result[]= [
+            "warehouse_id" => $warehouse->id,
             "material_name" => $this->name,
-          //  "qty" => $this->warehouse->qty,
-          //  "price" => $this->warehouse->price,
+            "qty" => $warehouse->remainder,
+            "price" => $warehouse->price,
         ];
+return $result;
     }
 }

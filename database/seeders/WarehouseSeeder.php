@@ -36,14 +36,14 @@ class WarehouseSeeder extends Seeder
         ]);
         Warehouse::create([
             'material_id' => $this->getID('Mato'),
-            'remainder' => 12,
-            'price' => 1500,
+            'remainder' => 200,
+            'price' => 1600,
         ]);
 
         Warehouse::create([
             'material_id' => $this->getID('Ip'),
             'remainder' => 40,
-            'price' => 50,
+            'price' => 500,
         ]);
         Warehouse::create([
             'material_id' => $this->getID('Ip'),
@@ -54,7 +54,7 @@ class WarehouseSeeder extends Seeder
         Warehouse::create([
             'material_id' => $this->getID('Tugma'),
             'remainder' => 500,
-            'price' => 500,
+            'price' => 300,
         ]);
         Warehouse::create([
             'material_id' => $this->getID('Zamok'),
