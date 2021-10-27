@@ -8,10 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Material extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'name',
     ];
-    public function warehouses(){
+
+    public function warehouses()
+    {
         return $this->hasMany(Warehouse::class);
     }
 

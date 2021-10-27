@@ -13,10 +13,7 @@ class Product extends Model
         'name',
         'code',
     ];
-    protected $appends = [
-        'qty',
 
-    ];
     public $warehouse_remainder;
 
     public function materials()
@@ -47,6 +44,7 @@ class Product extends Model
                     $this->warehouse_remainder[$warehouse->id] -= $calc;
                     $calc = 0;
                 }
+                if ($qty<=0)continue;
                 $result[] = [
                     "warehouse_id" => $warehouse->id,
                     "material_name" => $material->name,
